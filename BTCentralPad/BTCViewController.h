@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreBluetooth;
 
-@interface BTCViewController : UIViewController
+@interface BTCViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
+- (IBAction)scan:(UIButton *)sender;
 
 @end
